@@ -2,11 +2,13 @@ version: '3.8'
 
 services:
   frontend:
-    build: ./frontend
+    # REPLACE "YOUR_DOCKERHUB_USERNAME" BELOW!
+    image: kamran78/mean-frontend:latest
     restart: always
 
   backend:
-    build: ./backend
+    # REPLACE "YOUR_DOCKERHUB_USERNAME" BELOW!
+    image: kamran78/mean-backend:latest
     restart: always
     ports:
       - "8080:8080"
